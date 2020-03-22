@@ -4,13 +4,12 @@ h1, h4, p, .myButton {
 }
 
 .myButton {
-	background:#f9f9f9;
+	background:#e5ecf6;
 	border-radius:6px;
-	border:1px solid #dcdcdc;
+	border:1px solid #ffffff;
 	display:inline-block;
 	cursor:pointer;
 	font-size:15px;
-	font-weight:bold;
 	width: 200px;
 	padding:6px 24px;
 	margin: 0 24px 6px;
@@ -18,7 +17,12 @@ h1, h4, p, .myButton {
 }
 
 #button-global {
-	background: #FFA15A;
+	font-weight: bold;
+}
+
+#button-timeseries {
+	color: #3f5f8f;
+	background:#ededed;
 }
 
 .myButton:active {

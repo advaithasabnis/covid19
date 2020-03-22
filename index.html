@@ -24,10 +24,7 @@
     <object data="Global_Header.html"></object>
   </div>
   <div class="container-full">
-    <object data="World_Map_Active.html"></object>
-  </div>
-  <div class="container-full">
-    <object data="World_Map_Deaths.html"></object>
+    <object data="World_Maps.html"></object>
   </div>
   <div class="container-table">
     <object data="List_Countries_Table.html"></object>
@@ -64,14 +61,14 @@
 
 <script>
 	function globalFunction() {
-		document.getElementById("button-global").style.background = "#FFA15A";
-		document.getElementById("button-timeseries").style.background = "#f9f9f9";
+		document.getElementById("button-global").style.cssText = "color: #2a3f5f; font-weight: bold; background:#e5ecf6;";
+		document.getElementById("button-timeseries").style.cssText = "color: #3f5f8f; font-weight: normal; background:#ededed";
 		document.getElementById("block-global").style.display = "block";
 		document.getElementById("block-timeseries").style.display = "none";
 	}
 	function timeseriesFunction() {
-		document.getElementById("button-global").style.background = "#f9f9f9";
-		document.getElementById("button-timeseries").style.background = "#FFA15A";
+		document.getElementById("button-global").style.cssText = "color: #3f5f8f; font-weight: normal; background:#ededed";
+		document.getElementById("button-timeseries").style.cssText = "color: #2a3f5f; font-weight: bold; background:#e5ecf6;";
 		document.getElementById("block-global").style.display = "none";
 		document.getElementById("block-timeseries").style.display = "block";
 	}
