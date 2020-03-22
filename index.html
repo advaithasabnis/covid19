@@ -1,34 +1,81 @@
-<!--Updated 19 Mar 2020-->
-
 <html><head>
-<link rel="stylesheet" media="screen and (min-width: 1920px)" href="widescreen.css">
-<link rel="stylesheet" media="screen and (max-width: 1920px)" href="smallscreen.css">
+  <link rel="stylesheet"  href="css/main.css">
+  <link rel="stylesheet" media="screen and (min-width: 1920px)" href="css/widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 1920px)" href="css/smallscreen.css">
+  
+  <title>
+	Coronavirus Disease 2019
+  </title>
 </head>
+
 <body>
+
   <div align="center">
-    <font face="verdana">
-	  <h1>CORONAVIRUS PANDEMIC</h1>
-	  <h4>Last Updated: March 22, 2020  UTC 00:00</h4>
-	  <p> Updated Daily at around UTC 00:00</p>
-	</font>
+    <h1>Coronavirus Disease (COVID-19) Pandemic </h1>
+	<button id="button-global" class="myButton" onclick="globalFunction()">Global</a><button id="button-timeseries" class="myButton" onclick="timeseriesFunction()">Time Series</a>
   </div>
-  <div class="container">
-    <object data="Main.html"></object>
+  
+<div id="block-global">  
+  <div align="center"> 
+	<p>Last Updated: March 22, 2020  UTC 00:00</p>
+	<p> Updated Daily at around UTC 00:00</p>
+  </div> 
+  <div class="container-top">
+    <object data="Global_Header.html"></object>
   </div>
-  <div class="container">
-    <object data="Chart_0.html"></object>
+  <div class="container-full">
+    <object data="World_Map_Active.html"></object>
   </div>
-  <div class="container">
-    <object data="Chart_1.html"></object>
+  <div class="container-full">
+    <object data="World_Map_Deaths.html"></object>
   </div>
-  <div class="container">
-    <object data="Chart_2.html"></object>
-  </div>
-  <div class="container">
-    <object data="Chart_3.html"></object>
+  <div class="container-table">
+    <object data="List_Countries_Table.html"></object>
   </div>
   <div align="center">
-    <i><font face="verdana">Data collected from <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">JHU CSSE</a></font></i>
+    <p>Data collected from <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">JHU CSSE</a></p>
   </div>
+</div>
+ 
+<div id="block-timeseries" style="display:none">
+  <div align="center"> 
+	<p>Last Updated: March 22, 2020  UTC 00:00</p>
+	<p> Updated Daily at around UTC 00:00</p>
+  </div>
+  <div class="container">
+    <object data="Timeseries_World.html"></object>
+  </div>
+  <div class="container">
+    <object data="Timeseries_0.html"></object>
+  </div>
+  <div class="container">
+    <object data="Timeseries_1.html"></object>
+  </div>
+  <div class="container">
+    <object data="Timeseries_2.html"></object>
+  </div>
+  <div class="container">
+    <object data="Timeseries_3.html"></object>
+  </div>
+  <div align="center">
+    <p>Data collected from <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">JHU CSSE</a></p>
+  </div>
+</div> 
+
+<script>
+	function globalFunction() {
+		document.getElementById("button-global").style.background = "#FFA15A";
+		document.getElementById("button-timeseries").style.background = "#f9f9f9";
+		document.getElementById("block-global").style.display = "block";
+		document.getElementById("block-timeseries").style.display = "none";
+	}
+	function timeseriesFunction() {
+		document.getElementById("button-global").style.background = "#f9f9f9";
+		document.getElementById("button-timeseries").style.background = "#FFA15A";
+		document.getElementById("block-global").style.display = "none";
+		document.getElementById("block-timeseries").style.display = "block";
+	}
+</script>
+  
 </body>
 </html>

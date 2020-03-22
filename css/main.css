@@ -1,0 +1,31 @@
+h1, h4, p, .myButton {
+	color: #2a3f5f;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+.myButton {
+	background:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	font-size:15px;
+	font-weight:bold;
+	width: 200px;
+	padding:6px 24px;
+	margin: 0 24px 6px;
+	text-decoration:none;
+}
+
+#button-global {
+	background: #FFA15A;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton:focus {
+	outline: 0;
+}
