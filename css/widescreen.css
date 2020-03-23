@@ -26,6 +26,12 @@ object {
 	padding-bottom: 36%;
 }
 
+.container-canada {
+	position: relative;
+	width: 100%;
+	padding-bottom: 30%;
+}
+
 .container-table {
 	position: relative;
 	margin: 0 auto;

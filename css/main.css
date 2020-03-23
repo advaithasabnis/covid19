@@ -1,14 +1,15 @@
-h1, h4, p, .myButton {
+h1, h4, p {
 	color: #2a3f5f;
 	font-family: Verdana, Arial, sans-serif;
 }
 
 .myButton {
-	background:#e5ecf6;
+
 	border-radius:6px;
 	border:1px solid #ffffff;
 	display:inline-block;
 	cursor:pointer;
+	font-family: Verdana, Arial, sans-serif;
 	font-size:15px;
 	width: 200px;
 	padding:6px 24px;
@@ -16,13 +17,16 @@ h1, h4, p, .myButton {
 	text-decoration:none;
 }
 
-#button-global {
+.myButton-active {
+	background:#e5ecf6;
+	color: #2a3f5f;
 	font-weight: bold;
 }
 
-#button-timeseries {
-	color: #3f5f8f;
+.myButton-inactive {
 	background:#ededed;
+	color: #3f5f8f;
+	font-weight: normal;
 }
 
 .myButton:active {
