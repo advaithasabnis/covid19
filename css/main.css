@@ -4,17 +4,18 @@ h1, h4, p {
 }
 
 .myButton {
-
 	border-radius:6px;
 	border:1px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
+	cursor: pointer;
+	display: block;
 	font-family: Verdana, Arial, sans-serif;
 	font-size:15px;
-	width: 200px;
-	padding:6px 24px;
-	margin: 0 24px 6px;
+	padding: 10px 0;
+	margin: 5px auto;
+	position: relative;
+	text-align: center;
 	text-decoration:none;
+	width: 100%;
 }
 
 .myButton-active {
@@ -39,55 +40,27 @@ h1, h4, p {
 }
 
 .container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 50%;
+	margin: 0 auto;
+	max-width: 1800px;
+	position: relative;
+	text-align: center;
+	width: 90%;
+	padding: 0;
+}
+
+.col-2 {
+	width: 100%;
+	height: 600px;
+}
+
+.map {
+	padding-bottom: 50%;
 }
 
 object {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.container-top {
-	position: relative;
+	height: 100%;
+	position: absolute;
 	width: 100%;
-	height: 150px;
-}
-
-.container-full {
-	position: relative;
-	width: 100%;
-	padding-bottom: 50%;
-}
-
-.container-half-left {
-	display: inline-block;
-	position: relative;
-	width: 43%;
-	height: 90%;
-	margin-left: 6%;
-}
-
-.container-half-right {
-	display: inline-block;
-	position: relative;
-	width: 43%;
-	height: 90%;
-}
-
-.container-canada {
-	position: relative;
-	width: 100%;
-	padding-bottom: 56%;
-}
-
-.container-table {
-	position: relative;
-	width: 100%;
-	padding-bottom: 50%;
+	left: 0;
+	top: 0;
 }

@@ -1,44 +1,48 @@
-<html><head>
-  <link rel="stylesheet"  href="css/main.css">
-  <link rel="stylesheet" media="screen and (min-width: 1920px)" href="css/widescreen.css">
-  <script src="js/plotly.min.js"></script>  
-  <title>
-	COVID 2019 Global
-  </title>
-</head>
+<html>
+	<head>
+		<link rel="stylesheet"  href="css/main.css">
+		<link rel="stylesheet" media="screen and (min-width: 1920px)" href="css/widescreen.css">
+		<script src="js/plotly.min.js"></script>  
+	
+		<title>COVID 2019 Global</title>
+	</head>
+	<body>
 
-<body>
-
-  <div align="center">
-    <h1>Coronavirus Disease (COVID-19) Pandemic </h1>
-	<a id="button-global" class="myButton myButton-active" href="index.html" target="_self">Global</a>
-	<a id="button-canada" class="myButton myButton-inactive" href="canada.html" target="_self">Canada</a>
-	<a id="button-timeseries" class="myButton myButton-inactive" href="timeseries.html" target="_self">Time Series</a>
-  </div>
+		<div class="container">
+			<h1 align="center">Coronavirus Disease (COVID-19) Pandemic </h1>
+		</div>
+		<div class="container">
+			<a id="button-global" class="myButton myButton-active" href="index.html" target="_self">Global</a>
+			<a id="button-canada" class="myButton myButton-inactive" href="canada.html" target="_self">Canada</a>
+			<a id="button-timeseries" class="myButton myButton-inactive" href="timeseries.html" target="_self">Time Series</a>
+		</div>
   
-<div id="block-global">  
-  <div align="center"> 
-	<p>Last Updated: March 25, 2020,  00:00 UTC</p>
-  </div> 
-  <div class="container-top">
-    <object data="world/Global_Header.html"></object>
-  </div>
-  <div class="container-full">
-    <object data="world/World_Maps.html"></object>
-  </div>
-  <div class="container-half-left">
-    <object data="world/Bar_Cases_PM.html"></object>
-  </div>
-  <div class="container-half-right">
-    <object data="world/Bar_Deaths_PM.html"></object>
-  </div>
-  <div class="container-table">
-    <object data="world/List_Countries_Table.html"></object>
-  </div>
-  <div align="center">
-    <p>Data collected from <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">JHU CSSE</a></p>
-  </div>
-</div>
+		<div id="block-global">  
+			<div class="container"> 
+				<p align="center">Last Updated: March 25, 2020,  00:00 UTC</p>
+			</div> 
+			<div class="container" style="height: 150px">
+				<object data="world/Global_Header.html"></object>
+			</div>
+			<div class="container map">
+				<object data="world/World_Maps.html"></object>
+			</div>
+			<div class="container">
+				<div class="container col-2">
+						<object data="world/Bar_Cases_PM.html"></object>
+				</div>
+				<div class="container col-2">
+					<object data="world/Bar_Deaths_PM.html"></object>
+				</div>
+			</div>
+			<div class="container" style="height: 75%">
+				<object data="world/List_Countries_Table.html"></object>
+			</div>
   
-</body>
+			<div align="center">
+				<p>Data collected from <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">JHU CSSE</a></p>
+			</div>
+		</div>
+  
+	</body>
 </html>
