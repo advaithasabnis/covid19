@@ -56,13 +56,28 @@ object {
 .container-top {
 	position: relative;
 	width: 100%;
-	height: 200px;
+	height: 150px;
 }
 
 .container-full {
 	position: relative;
 	width: 100%;
 	padding-bottom: 50%;
+}
+
+.container-half-left {
+	display: inline-block;
+	position: relative;
+	width: 43%;
+	height: 90%;
+	margin-left: 6%;
+}
+
+.container-half-right {
+	display: inline-block;
+	position: relative;
+	width: 43%;
+	height: 90%;
 }
 
 .container-canada {
