@@ -1,7 +1,10 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
 		<link rel="stylesheet"  href="css/main.css">
-		<link rel="stylesheet" media="screen and (min-width: 1920px)" href="css/widescreen.css">
+		<link rel="stylesheet" media="screen and (min-width: 576px)" href="css/mediumscreen.css">
+		<link rel="stylesheet" media="screen and (min-width: 1600px)" href="css/widescreen.css">
 		<script src="js/plotly.min.js"></script>  
 	
 		<title>COVID 2019 Global</title>
@@ -27,13 +30,11 @@
 			<div class="container map">
 				<object data="world/World_Maps.html"></object>
 			</div>
-			<div class="container">
-				<div class="container col-2">
-						<object data="world/Bar_Cases_PM.html"></object>
-				</div>
-				<div class="container col-2">
-					<object data="world/Bar_Deaths_PM.html"></object>
-				</div>
+			<div class="container" style="height: 600px">
+				<object data="world/Bar_Cases_PM.html"></object>
+			</div>
+			<div class="container" style="height: 600px">
+				<object data="world/Bar_Deaths_PM.html"></object>
 			</div>
 			<div class="container" style="height: 75%">
 				<object data="world/List_Countries_Table.html"></object>

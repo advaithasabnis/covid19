@@ -1,15 +1,4 @@
-.col-2 {
-	display: inline-block;
-	width: 49%;
-	height: 600px;
-}
-
 .map {
 	padding-bottom: 0;
-	height: 900px;
-}
-
-.myButton {
-	display: inline-block;
-	width: 33%;
+	height: 720px;
 }
