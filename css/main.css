@@ -1,6 +1,49 @@
-h1, h4, p {
+h1, p {
 	color: #2a3f5f;
-	font-family: Verdana, Arial, sans-serif;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 1em;
+}
+
+p {
+	font-size: 0.75em;
+}
+
+.mainbar-2, .mainbar-3 {
+	margin: 5px auto;
+	max-width: 1440px;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.cases {
+	background: #2171b5;
+}
+
+.deaths {
+	background: #a50f15;
+}
+
+.tested {
+	background: #6a51a3;
+}
+
+.header {
+	color: #ffffff;
+	font-size: 20px;
+	margin: 0;
+	padding: 7px 0 0 0;
+}
+
+.cell {
+	color: #ffffff;
+	font-size: 28px;
+	margin: 0;
+	padding: 7px 0;
 }
 
 .myButton {
@@ -9,7 +52,7 @@ h1, h4, p {
 	cursor: pointer;
 	display: block;
 	font-family: Verdana, Arial, sans-serif;
-	font-size:15px;
+	font-size:12px;
 	padding: 10px 0;
 	margin: 5px auto;
 	position: relative;
@@ -40,12 +83,12 @@ h1, h4, p {
 }
 
 .container {
-	margin: 0 auto;
+	margin: 5px auto;
 	max-width: 1440px;
+	padding: 0;
 	position: relative;
 	text-align: center;
 	width: 90%;
-	padding: 0;
 }
 
 .map {
