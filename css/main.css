@@ -49,7 +49,7 @@ h1, h4, p {
 }
 
 .map {
-	padding-bottom: 50%;
+	display: none;
 }
 
 object {
