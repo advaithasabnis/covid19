@@ -1,3 +1,5 @@
 index_template.html
 canada_template.html
 global_template.html
+# Local Netlify folder
+.netlify
