@@ -1,0 +1,23 @@
+# COMMENT: Redirect home
+# COMMENT: Use index.html for all pages on domain
+
+[[redirects]]
+  from = "/covid-19/provincial"
+  to = "/provincial.html"
+  status = 200
+
+[[redirects]]
+  from = "/covid-19/global"
+  to = "/global.html"
+  status = 200
+
+[[redirects]]
+  from = "/covid-19"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/covid-19"
+  status = 302
+
