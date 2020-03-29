@@ -12,7 +12,7 @@ h1 {
 }
 
 p {
-	font-size: 0.75em;
+	font-size: 0.875em;
 }
 
 table {
@@ -70,18 +70,16 @@ object {
 .col {
 	display: inline-block;
 	margin: 0 auto;
-	width: 48%;
+	width: 49.5%;
 }
 
 .map {
 	display: block;
-	padding-bottom: 40%;
+	padding-bottom: 50%;
 }
 
 .map object {
-	height: 100%;
 	position: absolute;
-	width: 100%;
 	left: 0;
 	top: 0;
 }
