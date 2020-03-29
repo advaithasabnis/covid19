@@ -1,0 +1,36 @@
+h1 {
+	font-size: 1em;
+}
+
+.map {
+	display: none;
+	padding-bottom: 0;
+}
+
+.topnav a:not(:first-child) {
+	display: none;
+}
+
+.topnav a.icon {
+    float: right;
+    display: block;
+	font-size: 13px;
+}
+
+.topnav.responsive {
+	position: relative;
+}
+
+.topnav.responsive .icon {
+    position: absolute;
+	color: white;
+    right: 0;
+    top: 0;
+	font-size: 13px;
+	
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}

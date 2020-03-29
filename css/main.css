@@ -1,97 +1,65 @@
+body {
+	margin: 0;
+}
+
 h1, p {
 	color: #2a3f5f;
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
 }
 
 h1 {
-	font-size: 1em;
+	font-size: 1.25em;
 }
 
 p {
 	font-size: 0.75em;
 }
 
-.mainbar-2, .mainbar-3 {
-	display: inline-block;
-	margin: 5px auto;
-	max-width: 1440px;
-	padding: 0;
-	position: relative;
+table {
+	border-collapse: collapse;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	margin: 0 auto;
 	text-align: center;
+	width: 100%;
 }
 
-.mainbar-2 {
-	width: 48%;
+th {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	padding: 5px;
 }
 
-.mainbar-3 {
-	width: 32%;
+td {
+	color: #ffffff;
+	font-size: 22px;
+	margin: 0;
+	padding: 5px;
+	width: 33.33%;
+}
+
+object {
+	height: 100%;
+	width: 100%;
 }
 
 .cases {
 	background: #2171b5;
+	border-right: 8px solid white;
 }
 
 .deaths {
 	background: #a50f15;
+	border-right: 8px solid white;
 }
 
-.tested {
-	background: #6a51a3;
-}
-
-.header {
-	color: #ffffff;
-	font-size: 14px;
-	margin: 0;
-	padding: 7px 0 0 0;
-}
-
-.cell {
-	color: #ffffff;
-	font-size: 22px;
-	margin: 0;
-	padding: 7px 0;
-}
-
-.myButton {
-	border-radius:6px;
-	border:1px solid #ffffff;
-	cursor: pointer;
-	display: block;
-	font-family: Verdana, Arial, sans-serif;
-	font-size:12px;
-	padding: 10px 0;
-	margin: 5px auto;
-	position: relative;
-	text-align: center;
-	text-decoration:none;
-	width: 100%;
-}
-
-.myButton-active {
-	background:#e5ecf6;
-	color: #2a3f5f;
-	font-weight: bold;
-}
-
-.myButton-inactive {
-	background:#ededed;
-	color: #3f5f8f;
-	font-weight: normal;
-}
-
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-.myButton:focus {
-	outline: 0;
+.recovered {
+	background: #238b45;
 }
 
 .container {
-	margin: 5px auto;
+	margin: 0 auto;
 	max-width: 1440px;
 	padding: 0;
 	position: relative;
@@ -99,14 +67,54 @@ p {
 	width: 90%;
 }
 
-.map {
-	display: none;
+.col {
+	display: inline-block;
+	margin: 0 auto;
+	width: 48%;
 }
 
-object {
+.map {
+	display: block;
+	padding-bottom: 40%;
+}
+
+.map object {
 	height: 100%;
 	position: absolute;
 	width: 100%;
 	left: 0;
 	top: 0;
+}
+
+.topnav {
+	background-color: #ededed;
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+
+.topnav a {
+	color: #2a3f5f;
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+	background-color: #aaa;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #2a3f5f;
+	color: white;
+}
+
+.topnav .icon {
+	display: none;
 }
