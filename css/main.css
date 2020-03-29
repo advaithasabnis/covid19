@@ -2,13 +2,9 @@ body {
 	margin: 0;
 }
 
-h1, p {
+h1, h2, h3, p {
 	color: #2a3f5f;
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
-}
-
-h1 {
-	font-size: 1.25em;
 }
 
 p {
@@ -16,7 +12,7 @@ p {
 }
 
 table {
-	border-collapse: collapse;
+	border-spacing: 10px 0;
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
 	margin: 0 auto;
 	text-align: center;
@@ -24,17 +20,17 @@ table {
 }
 
 th {
+	border-radius: 10px 10px 0 0;
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: normal;
-	margin: 0;
 	padding: 5px;
 }
 
 td {
+	border-radius: 0 0 10px 10px;
 	color: #ffffff;
 	font-size: 22px;
-	margin: 0;
 	padding: 5px;
 	width: 33.33%;
 }
@@ -46,12 +42,10 @@ object {
 
 .cases {
 	background: #2171b5;
-	border-right: 8px solid white;
 }
 
 .deaths {
 	background: #a50f15;
-	border-right: 8px solid white;
 }
 
 .recovered {
@@ -63,7 +57,6 @@ object {
 	max-width: 1440px;
 	padding: 0;
 	position: relative;
-	text-align: center;
 	width: 90%;
 }
 
@@ -115,4 +108,16 @@ object {
 
 .topnav .icon {
 	display: none;
+}
+
+.FAQ {
+	max-width: 480px;
+}
+
+.FAQ>.answer {
+	line-height: 1.5em;
+	margin-bottom: 3em;
+	font-size: 1em;
+	font-weight: bold;
+	color: #2171b5;
 }
