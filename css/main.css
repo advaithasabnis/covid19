@@ -59,20 +59,20 @@ object {
 
 .container {
 	margin: 0 auto 10px;
-	max-width: 1440px;
+	max-width: 1200px;
 	padding: 0;
 	position: relative;
-	width: 90%;
+	width: 95%;
 }
 
 .panel {
 	margin: 0 auto 5px;
-	max-width: 1440px;
+	max-width: 1200px;
 	max-height: 0px;
 	overflow: hidden;
 	padding: 0;
 	position: relative;
-	width: 90%;
+	width: 95%;
 }
 
 .col {
@@ -83,7 +83,7 @@ object {
 
 .map {
 	display: block;
-	padding-bottom: 50%;
+	padding-bottom: 56.66%;
 }
 
 .map object {
@@ -137,7 +137,7 @@ object {
 }
 
 button.collapsible:before {
-    content: '\25BA';
+    content: '\25B6';
     color: #2a3f5f;
     float: left;
     margin-right: 7px;
