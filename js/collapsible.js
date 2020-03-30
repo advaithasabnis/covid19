@@ -7,10 +7,10 @@ window.onload = function () {
 	  coll[i].addEventListener("click", function() {
 		this.classList.toggle("active");
 		var panel = this.parentElement.nextElementSibling;
-		if (panel.style.maxHeight ) {
+		if (panel.style.maxHeight) {
 		  panel.style.maxHeight = null;
 		} else {
-		  panel.style.maxHeight = 500 + "px";
+		  panel.style.maxHeight = 1000 + 'px';
 		}
 	  });
 	}

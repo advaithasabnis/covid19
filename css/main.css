@@ -41,6 +41,7 @@ td {
 }
 
 object {
+	display: block;
 	height: 100%;
 	width: 100%;
 }
@@ -66,13 +67,14 @@ object {
 }
 
 .panel {
-	margin: 0 auto 5px;
-	max-width: 1200px;
-	max-height: 0px;
+	max-height: 0;
 	overflow: hidden;
+}
+
+.box {
 	padding: 0;
 	position: relative;
-	width: 95%;
+	width: 100%;
 }
 
 .col {
