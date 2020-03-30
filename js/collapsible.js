@@ -6,11 +6,11 @@ window.onload = function () {
 	for (i = 0; i < coll.length; i++) {
 	  coll[i].addEventListener("click", function() {
 		this.classList.toggle("active");
-		var content = this.parentElement.nextElementSibling;
-		if (content.style.display === "block") {
-		  content.style.display = "none";
+		var panel = this.parentElement.nextElementSibling;
+		if (panel.style.maxHeight ) {
+		  panel.style.maxHeight = null;
 		} else {
-		  content.style.display = "block";
+		  panel.style.maxHeight = 500 + "px";
 		}
 	  });
 	}
