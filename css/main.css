@@ -44,6 +44,7 @@ object {
 	display: block;
 	height: 100%;
 	width: 100%;
+	margin: -10px 0 0 0;
 }
 
 .cases {
@@ -67,7 +68,7 @@ object {
 }
 
 .panel {
-	max-height: 0;
+	display: none;
 	overflow: hidden;
 }
 
@@ -75,6 +76,15 @@ object {
 	padding: 0;
 	position: relative;
 	width: 100%;
+}
+
+.bar {
+	height: 90px;
+}
+
+.timeseries {
+	margin-top: -30px;
+	height: 400px;
 }
 
 .col {
