@@ -79,11 +79,12 @@ object {
 }
 
 .bar {
-	height: 90px;
+	height: 130px;
+	margin-bottom: -20px;
 }
 
 .timeseries {
-	margin-top: -30px;
+	margin-top: -60px;
 	height: 400px;
 }
 
