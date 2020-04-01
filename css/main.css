@@ -80,12 +80,14 @@ object {
 
 .bar {
 	height: 130px;
-	margin-bottom: -20px;
 }
 
 .timeseries {
-	margin-top: -60px;
 	height: 400px;
+}
+
+.box.timeseries {
+	margin-top: -60px;
 }
 
 .col {
