@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener('DOMContentLoaded', function () {
 
 	var coll = document.getElementsByClassName("collapsible");
 	var i;
@@ -7,11 +7,11 @@ window.onload = function () {
 	  coll[i].addEventListener("click", function() {
 		this.classList.toggle("active");
 		var panel = this.parentElement.nextElementSibling;
-		if (panel.style.display === "block") {
-		  panel.style.display = "none";
+		if (panel.style.maxHeight) {
+		  panel.style.maxHeight = null;
 		} else {
-		  panel.style.display = "block";
+		  panel.style.maxHeight = 1500 + "px";
 		}
 	  });
 	}
-}
+})
