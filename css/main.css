@@ -16,6 +16,20 @@ p.footnote {
 	margin-left: 7px;
 }
 
+iframe {
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: -10px 0 0 0;
+	border: none;
+}
+
+.map iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
 object {
 	display: block;
 	height: 100%;
