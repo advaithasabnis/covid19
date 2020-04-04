@@ -36,18 +36,6 @@ p.footnote {
 	width: 100%;
 }
 
-.bar {
-	height: 130px;
-}
-
-.timeseries {
-	height: 400px;
-}
-
-.box.timeseries {
-	margin-top: -60px;
-}
-
 .col {
 	display: inline-block;
 	margin: 0 auto;
