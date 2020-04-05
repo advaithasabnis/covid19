@@ -1,4 +1,9 @@
-.map {
+.map-canada {
 	padding-bottom: 0;
 	height: 540px;
+}
+
+.map-world {
+	padding-bottom: 0;
+	height: 600px;
 }
