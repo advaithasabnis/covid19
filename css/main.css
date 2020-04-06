@@ -7,6 +7,10 @@ h1, h2, h3, p {
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
 }
 
+div {
+	margin-bottom: 20px;
+}
+
 p {
 	font-size: 0.75em;
 }
@@ -17,7 +21,7 @@ p.footnote {
 }
 
 .container {
-	margin: 0 auto 10px;
+	margin: 0 auto 20px;
 	max-width: 1200px;
 	padding: 0;
 	position: relative;
@@ -25,6 +29,7 @@ p.footnote {
 }
 
 .panel {
+	margin: 0 auto;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.4s ease-out;

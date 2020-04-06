@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		if (panel.style.maxHeight) {
 		  panel.style.maxHeight = null;
 		} else {
-		  panel.style.maxHeight = 1500 + "px";
+		  panel.style.maxHeight = 2000 + "px";
 		}
 	  });
 	}
