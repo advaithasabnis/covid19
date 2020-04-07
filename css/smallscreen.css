@@ -1,3 +1,11 @@
+#canadaMapMobile {
+	display: block;
+}
+
+#canadaMap {
+	display: none;
+}
+
 .map-canada {
 	padding-bottom: 50%;
 }

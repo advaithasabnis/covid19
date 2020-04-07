@@ -47,8 +47,15 @@ p.footnote {
 	width: 49.5%;
 }
 
-.map-canada {
+#canadaMapMobile {
+	display: none;
+}
+
+#canadaMap {
 	display: block;
+}
+
+.map-canada {
 	padding-bottom: 45%;
 }
 
