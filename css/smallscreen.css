@@ -38,6 +38,7 @@
     text-align: left;
 }
 
-.col {
+.col-left, .col-right {
+	display: block;
 	width: 100%;
 }

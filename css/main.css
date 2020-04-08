@@ -41,12 +41,17 @@ p.footnote {
 	width: 100%;
 }
 
-.col {
+.col-left {
 	display: inline-block;
-	margin: 0 auto;
-	width: 49.5%;
+	margin: 0 2% 0 0;
+	width: 47.5%;
 }
 
+.col-right {
+	display: inline-block;
+	margin: 0 0 0 2%;
+	width: 47.5%;
+}
 #canadaMapMobile {
 	display: none;
 }
