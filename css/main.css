@@ -52,6 +52,11 @@ p.footnote {
 	margin: 0 0 0 2%;
 	width: 47.5%;
 }
+
+.topbar {
+	border-bottom: 1px solid lightgrey;
+}
+
 #canadaMapMobile {
 	display: none;
 }
