@@ -1,3 +1,9 @@
+/* For small displays */
+/* Maps */
+.map-canada {
+	padding-bottom: 50%;
+}
+
 #canadaMapMobile {
 	display: block;
 }
@@ -6,10 +12,7 @@
 	display: none;
 }
 
-.map-canada {
-	padding-bottom: 50%;
-}
-
+/* Top Navbar Becomes Menu */
 .topnav a:not(:first-child) {
 	display: none;
 }
@@ -38,7 +41,12 @@
     text-align: left;
 }
 
+/* Two column items fold in */
 .col-left, .col-right {
-	display: block;
+	float: none;
 	width: 100%;
+}
+
+.modal-content {
+  top: 10%;
 }
