@@ -32,7 +32,7 @@ p.footnote {
 	margin: 0 auto;
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height 0.4s ease-out;
+	transition: max-height 0.2s ease-out;
 }
 
 .box {
@@ -43,14 +43,13 @@ p.footnote {
 
 .col-left {
 	display: inline-block;
-	margin: 0 2% 0 0;
-	width: 47.5%;
+	width: 48%;
 }
 
 .col-right {
 	display: inline-block;
-	margin: 0 0 0 2%;
-	width: 47.5%;
+	float: right;
+	width: 48%;
 }
 
 .topbar {
@@ -133,16 +132,37 @@ p.footnote {
 	border: 0;
 }
 
-button.collapsible:before {
+.collapsible:before {
     content: '\25B6';
     color: #2a3f5f;
     float: left;
     margin-right: 7px;
 }
 
-button.collapsible.active:before {
+.collapsible.active:before {
     content: '\25BC';
-}	
+}
+
+.collapsible:focus {
+	outline: none;
+}
+
+.infoButton {
+	background-color: white;
+	border: 0;
+	color: grey;
+	font-size: 26px;
+	font-family: Verdana, Arial, sans-serif;
+	text-align: center;
+}
+
+.infoButton:hover {
+	color: #2a3f5f;
+}
+
+.infoButton:focus {
+	outline: none;
+}
 
 .FAQ {
 	max-width: 480px;
