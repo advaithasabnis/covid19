@@ -1,9 +1,5 @@
 /* For small displays */
 /* Maps */
-.map-canada {
-	padding-bottom: 50%;
-}
-
 #canadaMapMobile {
 	display: block;
 }
@@ -43,6 +39,7 @@
 
 /* Two column items fold in */
 .col-left, .col-right {
+	padding-bottom: 20px;
 	float: none;
 	width: 100%;
 }
