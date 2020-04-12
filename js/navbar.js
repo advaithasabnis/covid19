@@ -10,7 +10,7 @@ function navbar() {
 function bycases() {
   var x = document.getElementById("byCases");
   var y = document.getElementById("byDeaths");
-  x.style.maxHeight = 2000 + "px";
+  x.style.maxHeight = 2500 + "px";
   y.style.maxHeight = 0;
   
   var a = document.getElementById("btnCases");
@@ -23,7 +23,7 @@ function bydeaths() {
   var x = document.getElementById("byCases");
   var y = document.getElementById("byDeaths");
   x.style.maxHeight = 0;
-  y.style.maxHeight = 2000 + "px";  
+  y.style.maxHeight = 2500 + "px";  
   
   var a = document.getElementById("btnCases");
   var b = document.getElementById("btnDeaths");

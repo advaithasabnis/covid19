@@ -1,11 +1,15 @@
 /* For small displays */
 /* Maps */
+.map-canada {
+	padding-bottom: 70%;
+}
+
 #canadaMapMobile {
-	display: block;
+	display: block; /* Map with smaller font */
 }
 
 #canadaMap {
-	display: none;
+	display: none; /* Map with normal font */
 }
 
 /* Top Navbar Becomes Menu */

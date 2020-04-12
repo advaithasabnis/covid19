@@ -3,13 +3,19 @@ body {
 	margin: 0;
 }
 
-h1, h2, h3, h4, p, button, a {
+h1, h2, h3, h4, p, a {
 	color: #2a3f5f;
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	margin: 0.5em 0;
 }
 
 p {
 	font-size: 0.8125em;
+}
+
+button {
+	color: #2a3f5f;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
 }
 
 button:focus {
@@ -45,7 +51,7 @@ button:focus {
 }
 
 .topbar {
-	border-bottom: 1px solid lightgrey;
+	max-width: 900px;
 }
 
 .box {
@@ -54,19 +60,19 @@ button:focus {
 
 /* For Maps */
 .map-canada {
-	padding-bottom: 48%;
-	margin-bottom: 20px;
+	padding-bottom: 60%;
+	margin-bottom: 10px;
 }
 
 .map-world {
 	padding-bottom: 50%;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .map-ontario {
 	display: block;
 	padding-bottom: 40%;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .map>div {
@@ -89,6 +95,7 @@ button:focus {
 .topnav {
 	background-color: #ededed;
 	overflow: hidden;
+	margin-bottom: 10px;
 }
 
 .topnav>.container {
@@ -131,6 +138,7 @@ button:focus {
 	padding: 10px;
 	width: 100%;
 	border: 0;
+	border-radius: 2px;
 }
 
 .collapsible:before {
