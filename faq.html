@@ -1,12 +1,11 @@
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
 		<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
 		<link rel="stylesheet"  href="css/main.css">
-		<link rel="stylesheet" media="screen and (max-width: 576px)" href="css/smallscreen.css">
-		<link rel="stylesheet" media="screen and (min-width: 1280px)" href="css/widescreen.css">
-		<script src="js/navbar.js"></script>		
+		<link rel="stylesheet" media="screen and (max-width: 700px)" href="css/smallscreen.css">
+		<link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/widescreen.css">	
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45524776-2"></script>
 		<script>
@@ -16,21 +15,27 @@
 			
 			gtag('config', 'UA-45524776-2');
 		</script>
+		<script src="js/navbar.js"></script>	
 	
 		<title>COVID-19 FAQ</title>
 	</head>
 	<body>
-		<div class="topnav" id="myTopnav">
+		<div class="topnav">
 			<div class="container">
-				<a href="index.html" target="_self">Home</a>
-				<a href="provincial.html" target="_self">Provincial</a>
-				<a href="global.html" target="_self">Global</a>
-				<a href="faq.html" target="_self" class="active">FAQ</a>
-				<a href="datasources.html" target="_self">Sources</a>
+				<a href="index.html" target="_self" id="logoLink"><img src="src/logo.svg" /></a>
+				<a href="index.html" target="_self">COVID-19 in Canada</a>
 				<a href="javascript:void(0);" class="icon" onclick="navbar()">&#9776;</a>
+				<div class="topnav-right" id="myTopnav">
+					<a href="index.html" target="_self">Home</a>
+					<a href="provincial.html" target="_self">Provincial</a>
+					<a href="global.html" target="_self">Global</a>
+					<a href="faq.html" target="_self" class="active">FAQ</a>
+					<a href="datasources.html" target="_self">Sources</a>
+				</div>
 			</div>
 		</div>
-		<div id="block-provincial">
+		
+		<div id="block-faq">
 			<div class="container FAQ"> 
 				<h3 class="question">Are you official?</h3>
 				<p class="answer">No.</p>

@@ -1,4 +1,8 @@
 /* General Changes */
+html {
+    overflow-y: scroll; /* Prevents jump due to scroll bar */
+}
+
 body {
 	margin: 0;
 }
@@ -25,7 +29,7 @@ button:focus {
 /* Main Containers */
 .container {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1140px;
 	padding: 10px 0;
 	position: relative;
 	width: 95%;
@@ -50,13 +54,18 @@ button:focus {
 	width: 48%;
 }
 
-.topbar {
-	max-width: 900px;
-}
-
 .box {
 	overflow: hidden;
 }
+
+.topbar {
+	margin-left: 15%;
+}
+
+.panel>.topbar {
+	margin-left: 8%;
+}
+
 
 /* For Maps */
 .map-canada {
@@ -102,6 +111,14 @@ button:focus {
 	padding: 0;
 }
 
+.topnav img {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	width: 30px;
+	vertical-align: bottom;
+}
 .topnav a {
 	color: #2a3f5f;
 	display: block;
@@ -109,23 +126,31 @@ button:focus {
 	font-size: 14px;
 	font-weight: bold;
 	margin: 0;
-	padding: 14px 16px;
+	padding: 14px 14px;
 	text-align: center;
 	text-decoration: none;
 }
 
-.topnav a:hover {
+.topnav-right {
+  float: right;
+}
+
+.topnav-right a:hover {
 	background-color: #aaa;
 	color: black;
 }
 
-.topnav a.active {
+.topnav-right a.active {
 	background-color: #2a3f5f;
 	color: white;
 }
 
 .topnav .icon {
 	display: none;
+}
+
+#logoLink{
+	padding: 7px 0;
 }
 
 /* Collapsible Sections */
