@@ -25,7 +25,8 @@
 .topnav a.icon {
     float: right;
     display: block;
-	font-size: 13px;
+	font-size: 21px;
+	padding: 8px 14px;
 }
 
 .topnav-right a {
@@ -48,7 +49,6 @@
 .topnav-right.responsive a {
     float: none;
     display: block;
-    text-align: right;
 }
 
 /* Two column items fold in */
