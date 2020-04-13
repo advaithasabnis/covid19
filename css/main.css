@@ -115,8 +115,8 @@ button:focus {
 	float: left;
 	margin: 0;
 	padding: 0;
-	height: 30px;
-	width: 30px;
+	height: 31px;
+	width: 31px;
 	vertical-align: bottom;
 }
 .topnav a {
@@ -149,8 +149,13 @@ button:focus {
 	display: none;
 }
 
-#logoLink{
+#logoLink {
 	padding: 7px 0;
+}
+
+#siteName {
+	font-size: 15px;
+	padding: 13px 14px;
 }
 
 /* Collapsible Sections */
