@@ -27,6 +27,10 @@ button:focus {
 }
 
 /* Main Containers */
+.main {
+	margin-top: 55px;
+}
+
 .container {
 	margin: 0 auto;
 	max-width: 1140px;
@@ -105,10 +109,11 @@ button:focus {
 	background-color: #ededed;
 	overflow: hidden;
 	margin-bottom: 10px;
-}
-
-.topnav>.container {
-	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
 }
 
 .topnav img {
@@ -123,26 +128,33 @@ button:focus {
 	color: #2a3f5f;
 	display: block;
 	float: left;
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 15px;
 	margin: 0;
-	padding: 14px 14px;
+	padding: 13px 14px;
 	text-align: center;
 	text-decoration: none;
 }
 
+.topnav-content {
+	padding: 0 2.5%;
+	background-color: #ededed;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
 .topnav-right {
-  float: right;
+	float: right;
+	overflow: hidden;
 }
 
-.topnav-right a:hover {
-	background-color: #aaa;
-	color: black;
+.topnav a.navright:hover {
+	font-weight: bold;
 }
 
-.topnav-right a.active {
-	background-color: #2a3f5f;
-	color: white;
+.topnav a.active {
+	font-weight: bold;
+	/*background-color: #2a3f5f;
+	color: white;*/
 }
 
 .topnav .icon {
@@ -154,13 +166,14 @@ button:focus {
 }
 
 #siteName {
-	font-size: 15px;
-	padding: 13px 14px;
+	font-size: 16px;
+	padding: 12.5px 14px;
+	font-weight: bold;
 }
 
 /* Collapsible Sections */
 .collapsible {
-	background-color: #ededed;
+	background-color: #ddd;
 	font-size: 16px;
 	font-family: Verdana, Arial, sans-serif;
 	font-weight: bold;

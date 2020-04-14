@@ -22,6 +22,17 @@
 }
 
 /* Top Navbar Becomes Menu */
+.topnav-right {
+	float: none;
+	width: 100%;
+}
+
+.topnav.responsive {
+	background-color: rgba(0,0,0,0.6);
+	height: 100%;
+	
+}
+
 .topnav a.icon {
     float: right;
     display: block;
@@ -29,26 +40,14 @@
 	padding: 8px 14px;
 }
 
-.topnav-right a {
+.topnav a.navright {
 	display: none;
 }
 
-.topnav-right.responsive {
-	position: relative;
-	width: 100%;
-}
-
-.topnav-right.responsive .icon {
-    position: absolute;
-	color: white;
-    right: 0;
-    top: 0;
-	font-size: 13px;
-	
-}
-.topnav-right.responsive a {
+.topnav.responsive a.navright {
     float: none;
     display: block;
+	border-bottom: 1px solid #ccc;
 }
 
 /* Two column items fold in */
