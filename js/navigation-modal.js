@@ -30,4 +30,8 @@ window.addEventListener('DOMContentLoaded', function () {
 		modal.style.display = "none";
 	  }
 	}
+	
+	window.onscroll = function() {
+	  menu.className = "topnav";
+	}
 })

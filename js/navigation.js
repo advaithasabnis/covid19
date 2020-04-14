@@ -16,4 +16,8 @@ window.addEventListener('DOMContentLoaded', function () {
 		menu.className = "topnav";
 	  }
 	}
+	
+	window.onscroll = function() {
+	  menu.className = "topnav";
+	}
 })
