@@ -1,4 +1,27 @@
-/* General Changes */
+/* Fonts */
+@font-face {
+  font-family: 'archia';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Awesome Font'),
+       url('fonts/archia-medium-webfont.woff2') format('woff2'), 
+       url('fonts/archia-medium-webfont.woff') format('woff');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face {
+  font-family: 'archia';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Awesome Font'),
+       url('fonts/archia-semibold-webfont.woff2') format('woff2'), 
+       url('fonts/archia-semibold-webfont.woff') format('woff');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+/* Global Changes */
 html {
     overflow-y: scroll; /* Prevents jump due to scroll bar */
 }
@@ -7,19 +30,21 @@ body {
 	margin: 0;
 }
 
+* {
+   font-family: archia;
+}
+
 h1, h2, h3, h4, p, a {
-	color: #2a3f5f;
-	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	color: #4f4f4f;
 	margin: 0.5em 0;
 }
 
 p {
-	font-size: 0.8125em;
+	font-size: 0.875em;
 }
 
 button {
-	color: #2a3f5f;
-	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	color: #4f4f4f;
 }
 
 button:focus {
@@ -125,7 +150,6 @@ button:focus {
 	vertical-align: bottom;
 }
 .topnav a {
-	color: #2a3f5f;
 	display: block;
 	float: left;
 	font-size: 15px;
@@ -149,12 +173,12 @@ button:focus {
 
 .topnav a.navright:hover {
 	font-weight: bold;
+	color: black;
 }
 
 .topnav a.active {
 	font-weight: bold;
-	/*background-color: #2a3f5f;
-	color: white;*/
+	color: black;
 }
 
 .topnav .icon {
@@ -166,9 +190,13 @@ button:focus {
 }
 
 #siteName {
-	font-size: 16px;
-	padding: 12.5px 14px;
+	font-size: 18px;
+	padding: 12px 14px;
 	font-weight: bold;
+}
+
+#countryname {
+	color: #FF0000;
 }
 
 /* Collapsible Sections */
@@ -177,7 +205,6 @@ button:focus {
 	transition: background .2s ease-in-out;
 	cursor: pointer;
 	font-size: 16px;
-	font-family: Verdana, Arial, sans-serif;
 	font-weight: bold;
 	text-align: left;
 	padding: 10px;
@@ -188,8 +215,9 @@ button:focus {
 
 .collapsible:after {
     font-family: "Font Awesome 5 Free";
+	font-weight: bold;
 	content: "\f067";
-    color: #2a3f5f;
+    color: #555555;
 	float: right;
 }
 
@@ -228,7 +256,7 @@ button.metric {
 .infoButton {
 	display: inline-block;
 	font-size: 28px;
-	color: #2a3f5f;
+	color: #555555;
 	vertical-align: middle;
 }
 
@@ -247,7 +275,7 @@ button.metric {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -278,7 +306,7 @@ button.metric {
 
 .close:hover,
 .close:focus {
-  color: #2a3f5f;
+  color: #555555;
   text-decoration: none;
   cursor: pointer;
 }
@@ -296,7 +324,7 @@ p.footnote {
 
 .FAQ>.answer, .answer>a {
 	line-height: 1.5em;
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 	font-size: 1em;
 	font-weight: bold;
 	color: #2171b5;
@@ -305,7 +333,7 @@ p.footnote {
 }
 
 .answer>a:hover {
-	background: rgba(0,123,255,0.2);
+	background: rgba(0,123,255,0.15);
 }
 
 /* Animations */

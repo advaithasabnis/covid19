@@ -1,8 +1,25 @@
 <html>
 	<head>
-		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
 		<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+		<title>COVID-19 in Canada</title>
+		<meta name="title" content="COVID-19 in Canada">
+		<meta name="description" content="Track the spread of coronavirus (COVID-19) in Canada with advanced charts to gain insights on how we are flattening the curve.">
+		<meta name="keywords" content="coronavirus,covid,covid19,covid-19,corona,pandemic,canada,virus,hospitalized,icu,cases">
+		<meta name="og:type" content="website">
+		<meta name="og:title" content="COVID-19 in Canada">
+		<meta name="og:description" content="Track the spread of coronavirus (COVID-19) in Canada with advanced charts to gain insights on how we are flattening the curve.">
+		<meta name="og:url" content="https://advaithasabnis.github.io/covid19">
+		<meta name="og:image" content="src/full-logo.png">
+		<meta name="twitter:title" content="COVID-19 in Canada">
+		<meta name="twitter:description" content="Track the spread of coronavirus (COVID-19) in Canada with advanced charts to gain insights on how we are flattening the curve.">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:url" content="https://advaithasabnis.github.io/covid19">
+		<meta name="twitter:image" content="src/full-logo.png">
+		<link rel="preload" as="font" href="css/fonts/archia-medium-webfont.woff2" type="font/woff2">
+		<link rel="preload" as="font" href="css/fonts/archia-semibold-webfont.woff2" type="font/woff2">
 		<link rel="stylesheet"  href="css/main.css">
 		<link rel="stylesheet" media="screen and (max-width: 700px)" href="css/smallscreen.css">
 		<link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/widescreen.css">	
@@ -17,14 +34,13 @@
 		</script>
 		<script src="js/navigation.js"></script>
 		<script src="https://kit.fontawesome.com/23a91de90f.js" crossorigin="anonymous"></script>
-		<title>COVID-19 in Canada - FAQ</title>
 	</head>
 	<body>
 		<div class="topnav" id="myTopnav">
 			<div class="topnav-content">
 				<a href="index.html" target="_self" id="logoLink"><img src="src/logo.svg" /></a>
-				<a href="index.html" target="_self" id="sitename">COVID-19 in Canada</a>
-				<a href="javascript:void(0);" class="icon" id="menuBtn">&#9776;</a>
+				<a href="index.html" target="_self" id="sitename">COVID-19 in <span id="countryname">CANADA</span></a>
+				<a href="javascript:void(0);" class="icon" id="menuBtn"><i class="fas fa-bars"></i></a>
 				<div class="topnav-right">
 					<a href="index.html" target="_self" class="navright">Home</a>
 					<a href="provincial.html" target="_self" class="navright">Provincial</a>
@@ -37,7 +53,7 @@
 		
 		<div id="block-faq" class="main">
 			<div class="container FAQ"> 
-				<h3 class="question fadeInUp" style="animation-delay: 0.2s">Are you official?</h3>
+				<h3 class="question fadeInUp" style="animation-delay: 0.2s">Is this an official website?</h3>
 				<p class="answer fadeInUp" style="animation-delay: 0.2s">No.</p>
 				<h3 class="question fadeInUp" style="animation-delay: 0.3s">Then who are you?</h3>
 				<p class="answer fadeInUp" style="animation-delay: 0.3s">I am a PhD student at the University of Toronto. I have been collecting Canadian case data since the beginning of the pandemic. I realized that there is no single source to get a good idea of the national cases, testing and hospitalization rates
@@ -48,9 +64,9 @@
 				<p class="answer fadeInUp" style="animation-delay: 0.4s">The Public Health Agency of Canada updates the data at a scheduled time.
 				However, I update them based on provincial reports which can generally be considered more recent.</p>
 				<h3 class="question fadeInUp" style="animation-delay: 0.5s">What are your data sources?</h3>
-				<p class="answer fadeInUp" style="animation-delay: 0.5s">All data sources are listed <a href="datasources.html" target="_self">here.</a></p>
+				<p class="answer fadeInUp" style="animation-delay: 0.5s">For Canada, I only use data provided by official provincial and national authorities. All sources are listed <a href="datasources.html" target="_blank">here. <i class="fas fa-external-link-alt"></i></a></p>
 				<h3 class="question fadeInUp" style="animation-delay: 0.6s">How can I contact you?</h3>
-				<p class="answer fadeInUp" style="animation-delay: 0.6s">Thank you for your interest! Please email me at <a href="mailto:covid19incanada@gmail.com" target="_self">covid19incanada@gmail.com</p>
+				<p class="answer fadeInUp" style="animation-delay: 0.6s">Thank you for your interest! Please email me at <a href="mailto:covid19incanada@gmail.com" target="_self">covid19incanada@gmail.com</a>. I welcome your feedback and requests.</p>
 		</div>
   
 	</body>

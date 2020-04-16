@@ -1,7 +1,7 @@
 /* For small displays */
 /* Top Bar */
 .topbar {
-	margin-left: 0;
+	margin-left: 5%;
 }
 
 .panel>.topbar {
@@ -36,8 +36,7 @@
 .topnav a.icon {
     float: right;
     display: block;
-	font-size: 20px;
-	padding: 8px 14px;
+	font-size: 18px;
 }
 
 .topnav a.navright {
