@@ -173,7 +173,9 @@ button:focus {
 
 /* Collapsible Sections */
 .collapsible {
-	background-color: #ddd;
+	background-color: #e6e6e6;
+	transition: background .2s ease-in-out;
+	cursor: pointer;
 	font-size: 16px;
 	font-family: Verdana, Arial, sans-serif;
 	font-weight: bold;
@@ -184,15 +186,19 @@ button:focus {
 	border-radius: 2px;
 }
 
-.collapsible:before {
-    content: '\25B6';
+.collapsible:after {
+    font-family: "Font Awesome 5 Free";
+	content: "\f067";
     color: #2a3f5f;
-    float: left;
-    margin-right: 7px;
+	float: right;
 }
 
-.collapsible.active:before {
-    content: '\25BC';
+.collapsible.active:after {
+    content: '\f068';
+}
+
+.collapsible:hover {
+	background-color: #ededed;
 }
 
 .collapsible:focus {
@@ -221,9 +227,8 @@ button.metric {
 /* Info Buttons */
 .infoButton {
 	display: inline-block;
-	float: right;
-	width: 30px;
-	height: 30px;
+	font-size: 28px;
+	color: #2a3f5f;
 	vertical-align: middle;
 }
 
@@ -289,10 +294,35 @@ p.footnote {
 	max-width: 480px;
 }
 
-.FAQ>.answer {
+.FAQ>.answer, .answer>a {
 	line-height: 1.5em;
 	margin-bottom: 3em;
 	font-size: 1em;
 	font-weight: bold;
 	color: #2171b5;
+	text-decoration: none;
+    transition: background .2s ease-in-out
+}
+
+.answer>a:hover {
+	background: rgba(0,123,255,0.2);
+}
+
+/* Animations */
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 0.45s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
