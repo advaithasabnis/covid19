@@ -38,7 +38,7 @@
 <script src="js/collapsible.js"></script>
 <script src="js/metricstoggle.js"></script>
 </head>
-<body>
+<body onload="transition()">
 <div class="topnav" id="myTopnav">
 <div class="topnav-content">
 <a href="index.html" id="logoLink" target="_self"><img src="src/logo.svg"/></a>
@@ -88,7 +88,7 @@
                 
             </script>
 </div></div></div>
-<div class="container"><p align="center" class="fadeInUp" id="updateTime" style="animation-delay: 0.4s;">Last Updated: April 18, 2020, 14:00 EDT</p></div>
+<div class="container"><p align="center" class="fadeInUp" id="updateTime" style="animation-delay: 0.4s;">Last Updated: April 18, 2020, 15:00 EDT</p></div>
 <div class="container map map-canada fadeInUp" id="canadaMap" style="animation-delay: 0.5s;"><div>
 <div class="plotly-graph-div" id="16ad704f-17d1-4fb4-9a23-2cf396fcc020" style="height:100%; width:100%;"></div>
 <script type="text/javascript">
@@ -451,6 +451,13 @@
 				The logarithmic graphs of cumulative cases are used to show the growth rate i.e. the rate at which total cases grow every day. On a logarithmic scale,
 				exponential growth looks like a straight rising line. If a region is slowing the spread, you will see the curve bending down.<br/><br/>
 				This section is updated once daily at the end of the day.</p>
+</div>
+</div>
+<div class="modal" id="transitionModal">
+<div class="modal-content">
+<h2>We are moving!<span class="close2">×</span></h2>
+<h3>
+				To support the increasing number of visitors to the website we are moving to: <a href="https://covid-19incanada.com" target="_blank">covid-19incanada.com</a></h3>
 </div>
 </div>
 </body>

@@ -34,7 +34,7 @@ body {
    font-family: archia;
 }
 
-h1, h2, h3, h4, p, a {
+h1, h2, h4, p, a {
 	color: #4f4f4f;
 	margin: 0.5em 0;
 }
@@ -43,7 +43,7 @@ p {
 	font-size: 0.875em;
 }
 
-button {
+button, h3 {
 	color: #4f4f4f;
 }
 
@@ -300,12 +300,16 @@ button.metric {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1),0 6px 20px 0 rgba(0,0,0,0.2);
 }
 
+.modal-content a {
+	color: #fa8072;
+}
+
 .modal-content>p {
 	margin-block-end: 1.7em;
 }
 
 /* The Close Button */
-.close {
+.close, .close2 {
   color: grey;
   float: right;
   font-size: 20px;
@@ -313,7 +317,8 @@ button.metric {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.close2:hover {
   color: #555555;
   text-decoration: none;
   cursor: pointer;
