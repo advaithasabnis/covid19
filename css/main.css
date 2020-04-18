@@ -335,13 +335,13 @@ p.footnote {
 	margin-bottom: 2em;
 	font-size: 1em;
 	font-weight: bold;
-	color: #2171b5;
+	color: #fa8072;
 	text-decoration: none;
     transition: background .2s ease-in-out
 }
 
 .answer>a:hover {
-	background: rgba(0,123,255,0.15);
+	background: rgba(250,128,114,0.15);
 }
 
 /* Animations */
