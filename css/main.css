@@ -34,16 +34,16 @@ body {
    font-family: archia;
 }
 
-h1, h2, h4, p, a {
+h1, h2, h3, h4, h5, p, a {
 	color: #4f4f4f;
-	margin: 0.5em 0;
+	margin: 0.875em 0;
 }
 
 p {
 	font-size: 0.875em;
 }
 
-button, h3 {
+button {
 	color: #4f4f4f;
 }
 
@@ -62,14 +62,6 @@ button:focus {
 	padding: 10px 0;
 	position: relative;
 	width: 95%;
-}
-
-.panel {
-	margin: 0 auto;
-	max-height: 0;
-	overflow: hidden;
-	padding: 0;
-	transition: max-height 0.2s ease-out;
 }
 
 .col-left {
@@ -91,10 +83,6 @@ button:focus {
 	margin-left: 15%;
 }
 
-.panel>.topbar {
-	margin-left: 8%;
-}
-
 .responsive-img {
 	display: block;
 	max-width: 550px;
@@ -106,7 +94,7 @@ button:focus {
 
 /* For Maps */
 .map-canada {
-	padding-bottom: 60%;
+	padding-bottom: 50%;
 	margin-bottom: 10px;
 }
 
@@ -239,6 +227,58 @@ button:focus {
 
 .collapsible:focus {
 	outline: none;
+}
+
+.panel {
+	margin: 0 auto;
+	max-height: 0;
+	overflow: hidden;
+	padding: 0;
+	transition: max-height 0.2s ease-out;
+}
+
+.panel>.topbar {
+	margin-left: 8%;
+}
+
+/* Tooltips */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  left: 49%;
+}
+
+.tooltip:hover,
+.tooltip:focus {
+	color: #FF0000;
+	cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 318px;
+  background-color: #fdfdfd;
+  color: #4f4f4f;
+  text-align: left;
+  border-radius: 6px;
+  padding: 0 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1),0 6px 20px 0 rgba(0,0,0,0.2);
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  margin-left: -171px;
+  
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Metrics by Cases or Deaths */

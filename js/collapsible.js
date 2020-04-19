@@ -14,4 +14,10 @@ window.addEventListener('DOMContentLoaded', function () {
 		}
 	  });
 	}
+	
+	/* if (window.location.href.indexOf("#ontario") > -1) {
+		var province = document.getElementById("ontario");
+		province.style.maxHeight = 2500 + "px";
+		window.location.assign("#ontario");
+	} */
 })
