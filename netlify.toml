@@ -2,7 +2,7 @@
 # COMMENT: Use index.html for all pages on domain
 
 [[redirects]]
-  from = "/*"
+  from = "/covid-19"
   to = "/"
   status = 302
 
