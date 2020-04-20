@@ -9,10 +9,6 @@
 }
 
 /* Maps */
-.map-canada {
-	padding-bottom: 55%;
-}
-
 #canadaMapMobile {
 	display: block; /* Map with smaller font */
 }
