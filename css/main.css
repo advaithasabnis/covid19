@@ -64,6 +64,14 @@ button:focus {
 	width: 95%;
 }
 
+.full-width-container {
+	margin: 0 auto;
+	max-width: 1140px;
+	padding: 10px 0;
+	position: relative;
+	width: 100%;
+}
+
 .col-left {
 	display: inline-block;
 	width: 48%;
@@ -239,7 +247,7 @@ button:focus {
 	max-height: 0;
 	overflow: hidden;
 	padding: 0;
-	transition: max-height 0.2s ease-out;
+	transition: max-height 0.1s ease-out;
 }
 
 .panel>.topbar {
@@ -355,7 +363,7 @@ button.metric {
 }
 
 /* The Close Button */
-.close, .close2 {
+.close {
   color: grey;
   float: right;
   font-size: 20px;
@@ -378,21 +386,56 @@ p.footnote {
 
 /* FAQ Page */
 .FAQ {
-	max-width: 480px;
+	max-width: 570px;
 }
 
-.FAQ>.answer, .answer>a {
-	line-height: 1.5em;
+.about {
 	margin-bottom: 2em;
+}
+
+.answer {
+	line-height: 1.5em;
 	font-size: 1em;
 	font-weight: bold;
-	color: #fa8072;
-	text-decoration: none;
-    transition: background .2s ease-in-out
+	color: #2171b5;
+    transition: background .2s ease-in-out;
+	text-align: justify;
 }
 
-.answer>a:hover {
-	background: rgba(250,128,114,0.15);
+.answer a, .answer ul, .answer p {
+	line-height: 1.5em;
+	font-size: 1em;
+	font-weight: bold;
+	color: #2171b5;
+}
+
+.answer a:hover {
+	background: rgba(33,113,181,0.15);
+}
+
+/* Footer */
+.footer {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 32%;
+	margin: 0 auto;
+}
+
+#wa-share {
+	color: #075E54;
+}
+
+#fb-share {
+	color: #1778F2;
+}
+
+#tw-share {
+	color: #1DA1F2;
+}
+
+.copyright {
+	margin-left: -36px;
 }
 
 /* Animations */

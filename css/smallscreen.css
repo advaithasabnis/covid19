@@ -55,3 +55,12 @@
 .modal-content {
   top: 10%;
 }
+
+.footer {
+	text-align: center;
+	width: 100%;
+}
+
+.copyright {
+	margin-left: 0;
+}
