@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'archia';
-  font-style: bold;
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: local('Awesome Font'),
@@ -396,16 +396,14 @@ p.footnote {
 .answer {
 	line-height: 1.5em;
 	font-size: 1em;
-	font-weight: bold;
 	color: #2171b5;
-    transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
 	text-align: justify;
 }
 
 .answer a, .answer ul, .answer p {
 	line-height: 1.5em;
 	font-size: 1em;
-	font-weight: bold;
 	color: #2171b5;
 }
 
