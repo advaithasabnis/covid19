@@ -412,6 +412,11 @@ p.footnote {
 }
 
 /* Footer */
+.footer-main {
+  background-color: #ededed;
+  margin-top: 40px;
+}
+
 .footer {
 	display: inline-block;
 	vertical-align: top;
