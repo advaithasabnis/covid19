@@ -140,13 +140,14 @@ button:focus {
 
 /* Top Navigation Bar */
 .topnav {
-	background-color: #ededed;
+	background-color: #e6e6e6;
 	overflow: hidden;
 	margin-bottom: 10px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	height: 45px;
+  width: 100%;
 	z-index: 2;
 }
 
@@ -163,13 +164,13 @@ button:focus {
 	float: left;
 	font-size: 15px;
 	margin: 0;
-	padding: 13px 14px;
+	padding: 13px 13px;
 	text-align: center;
 	text-decoration: none;
 }
 
 .topnav-content {
-	padding: 0 2.5%;
+	padding: 0 10px;
 	background-color: #ededed;
 	max-width: 1140px;
 	margin: 0 auto;
@@ -200,7 +201,7 @@ button:focus {
 
 #siteName {
 	font-size: 18px;
-	padding: 12px 14px;
+	padding: 12px 12px;
 	font-weight: bold;
 }
 
@@ -208,9 +209,34 @@ button:focus {
 	color: #FF0000;
 }
 
+/* Slideshow */
+.slideshow {
+  background-color: rgba(250, 128, 114, 0.3);
+  height: 45px;
+  margin-top: 45px;
+  display: table;
+  width: 100%;
+}
+
+.slidecontainer {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.slide {
+  display: none;
+  height: 45px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.slide p {
+  margin: 0 10px;
+}
+
 /* Collapsible Sections */
 .collapsible {
-	background-color: #e6e6e6;
+	background-color: #ededed;
 	transition: background .2s ease-in-out;
 	cursor: pointer;
 	font-size: 16px;
@@ -235,7 +261,7 @@ button:focus {
 }
 
 .collapsible:hover {
-	background-color: #ededed;
+	background-color: #e6e6e6;
 }
 
 .collapsible:focus {
