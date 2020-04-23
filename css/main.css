@@ -3,7 +3,7 @@
   font-family: 'archia';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: auto;
   src: local('Awesome Font'),
        url('fonts/archia-medium-webfont.woff2') format('woff2'), 
        url('fonts/archia-medium-webfont.woff') format('woff');
@@ -14,7 +14,7 @@
   font-family: 'archia';
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
+  font-display: auto;
   src: local('Awesome Font'),
        url('fonts/archia-semibold-webfont.woff2') format('woff2'), 
        url('fonts/archia-semibold-webfont.woff') format('woff');
