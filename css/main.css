@@ -3,7 +3,7 @@
   font-family: 'archia';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: local('Awesome Font'),
        url('fonts/archia-medium-webfont.woff2') format('woff2'), 
        url('fonts/archia-medium-webfont.woff') format('woff');
@@ -14,7 +14,7 @@
   font-family: 'archia';
   font-style: normal;
   font-weight: 700;
-  font-display: auto;
+  font-display: swap;
   src: local('Awesome Font'),
        url('fonts/archia-semibold-webfont.woff2') format('woff2'), 
        url('fonts/archia-semibold-webfont.woff') format('woff');
@@ -270,9 +270,14 @@ button:focus {
   border-radius: 4px;
   font-size: 15px;
   margin: 10px 5px;
-  padding: 7px 7px;
+  padding: 7px 22px;
   transition: background .2s ease-in;
-  
+}
+
+@media screen and (max-width: 850px) {
+  .selector-item {
+    padding: 7px;
+  }
 }
 
 .selector-item.active {
