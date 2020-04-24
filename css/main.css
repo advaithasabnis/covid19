@@ -34,7 +34,7 @@ body {
    font-family: archia;
 }
 
-h1, h2, h3, h4, h5, p, a {
+h1, h2, h3, h4, h5, p, a, select, option {
 	color: #4f4f4f;
 	margin: 0.5em 0;
 }
@@ -56,6 +56,14 @@ button:focus {
 	margin-top: 55px;
 }
 
+.main2 {
+	margin-top: 10px;
+}
+
+.beforeload {
+  visibility: hidden;
+}
+
 .container {
 	margin: 0 auto;
 	max-width: 1140px;
@@ -70,6 +78,10 @@ button:focus {
 	padding: 10px 0;
 	position: relative;
 	width: 100%;
+}
+
+.gap-container {
+  margin: 90px auto;
 }
 
 .col-left {
@@ -211,7 +223,7 @@ button:focus {
 
 /* Slideshow */
 .slideshow {
-  background-color: rgba(250, 128, 114, 0.3);
+  background-color: rgba(250, 128, 114, 0.25);
   height: 45px;
   margin-top: 45px;
   display: table;
@@ -232,12 +244,52 @@ button:focus {
 
 .slide p {
   margin: 0 10px;
+  max-height: 45px;
+  overflow: hidden;
+}
+
+/* Selector */
+.selector-content {
+  background-color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.selector-content .btn {
+	display: none;
+}
+
+.selector-item {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 10px 5px;
+  padding: 7px 7px;
+  transition: background .2s ease-in;
+  
+}
+
+.selector-item.active {
+  background-color: #fa8072;
+  color: #fff;
+}
+
+.selector-item:hover {
+  outline: none;
+  background-color: #fa8072;
+  cursor: pointer;
 }
 
 /* Collapsible Sections */
 .collapsible {
 	background-color: #ededed;
-	transition: background .2s ease-in-out;
+	transition: background .2s ease-in;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: bold;
@@ -273,11 +325,14 @@ button:focus {
 	max-height: 0;
 	overflow: hidden;
 	padding: 0;
-	transition: max-height 0.1s ease-out;
 }
 
 .panel>.topbar {
 	margin-left: 8%;
+}
+
+.panel.default {
+  max-height: 2500px;
 }
 
 /* Tooltips */
@@ -422,19 +477,19 @@ p.footnote {
 .answer {
 	line-height: 1.5em;
 	font-size: 1em;
-	color: #2171b5;
-  transition: background .2s ease-in-out;
+	color: #fa8072;
 	text-align: justify;
 }
 
 .answer a, .answer ul, .answer p {
 	line-height: 1.5em;
 	font-size: 1em;
-	color: #2171b5;
+	color: #fa8072;
+  transition: background .2s;
 }
 
 .answer a:hover {
-	background: rgba(33,113,181,0.15);
+	background: rgba(250,128,114,0.15);
 }
 
 /* Footer */
@@ -468,6 +523,28 @@ p.footnote {
 }
 
 /* Animations */
+.loader {
+  margin: 100px auto;
+  border: 6px solid white;
+  border-radius: 50%;
+  border-top: 6px solid #fa8072;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .fadeInUp {
   animation-name: fadeInUp;
   animation-duration: 0.45s;
@@ -483,5 +560,21 @@ p.footnote {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

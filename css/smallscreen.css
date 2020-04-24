@@ -8,6 +8,10 @@
 	margin-left: 0;
 }
 
+.gap-container {
+  margin: 30px auto;
+}
+
 /* Maps */
 #canadaMapMobile {
 	display: block; /* Map with smaller font */
@@ -25,13 +29,12 @@
 
 .topnav.responsive {
 	background-color: rgba(0,0,0,0.6);
-	height: 100%;
-	
+	height: 100%
 }
 
 .topnav a.icon {
-    float: right;
-    display: block;
+  float: right;
+  display: block;
 	font-size: 16px;
 }
 
@@ -40,9 +43,36 @@
 }
 
 .topnav.responsive a.navright {
-    float: none;
-    display: block;
+  float: none;
+  display: block;
 	border-bottom: 1px solid #ccc;
+}
+
+/* Selector */
+.selector-content a.btn {
+	background-color: #ededed;
+	padding: 10px 0;
+	margin: 0;
+	display: block;
+	text-decoration: none;
+}
+
+.selector-content .selector-item {
+	display: none;
+}
+
+.selector-content.responsive {
+	height: 2500px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.selector-content.responsive .selector-item {
+	border-bottom: 1px solid #ccc;
+	float: none;
+	display: block;
+	padding: 10px 0;
+	width: 100%;
+	margin: 0;
 }
 
 /* Two column items fold in */
