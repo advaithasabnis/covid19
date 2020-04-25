@@ -523,6 +523,14 @@ p.footnote {
 	color: #1DA1F2;
 }
 
+#git-link {
+  color: #333;
+}
+
+#li-link {
+  color: #0077b5;
+}
+
 .copyright {
 	margin-left: -36px;
 }
