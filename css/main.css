@@ -34,7 +34,7 @@ body {
    font-family: archia;
 }
 
-h1, h2, h3, h4, h5, p, a, select, option {
+h1, h2, h3, h4, h5, p, a {
 	color: #4f4f4f;
 	margin: 0.5em 0;
 }
@@ -114,7 +114,7 @@ button:focus {
 
 /* For Maps */
 .map-canada {
-	padding-bottom: 55%;
+	padding-bottom: 52%;
 	margin-bottom: 10px;
 }
 
@@ -223,7 +223,7 @@ button:focus {
 
 /* Slideshow */
 .slideshow {
-  background-color: rgba(250, 128, 114, 0.25);
+  background-color: #E5ECF6;
   height: 45px;
   margin-top: 45px;
   display: table;
@@ -269,7 +269,7 @@ button:focus {
   border: 0;
   border-radius: 4px;
   font-size: 15px;
-  margin: 10px 5px;
+  margin: 5px 5px;
   padding: 7px 22px;
   transition: background .2s ease-in;
 }
@@ -347,6 +347,7 @@ button:focus {
   display: inline-block;
   left: 49%;
   z-index: 1;
+  margin-bottom: 10px;
 }
 
 .tooltip:hover,
@@ -370,7 +371,6 @@ button:focus {
   top: 120%;
   left: 50%;
   margin-left: -171px;
-  
   /* Fade in tooltip */
   opacity: 0;
   transition: opacity 0.4s;
@@ -477,13 +477,13 @@ p.footnote {
 
 .about {
 	margin-bottom: 2em;
+  text-align: justify;
+  line-height: 1.5em;
 }
 
 .answer {
-	line-height: 1.5em;
 	font-size: 1em;
 	color: #fa8072;
-	text-align: justify;
 }
 
 .answer a, .answer ul, .answer p {
@@ -500,7 +500,7 @@ p.footnote {
 /* Footer */
 .footer-main {
   background-color: #ededed;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .footer {
