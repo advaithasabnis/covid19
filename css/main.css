@@ -448,7 +448,6 @@ button.metric {
 	margin-block-end: 1.7em;
 }
 
-/* The Close Button */
 .close {
   color: grey;
   float: right;
@@ -468,6 +467,17 @@ button.metric {
 p.footnote {
 	margin-block-start: 0;
 	margin-left: 2.5%;
+  text-align: justify;
+}
+
+#readmoreText {
+  display: none;
+}
+
+#readmoreBtn {
+  font-style: italic;
+  color: #aaa;
+  cursor: pointer;
 }
 
 /* FAQ Page */
