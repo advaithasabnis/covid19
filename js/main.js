@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		var s = document.getElementsByClassName("slide");
 		for (j = 0; j < s.length; j++) {
 			s[j].style.display = "none";
+			s[j].style.visibility = "visible";
 		}
 		slideIndex++;
 		if (slideIndex > s.length) {slideIndex=1;}

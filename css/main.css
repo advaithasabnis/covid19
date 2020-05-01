@@ -236,10 +236,11 @@ button:focus {
 }
 
 .slide {
-  display: none;
+  display: table-cell;
   height: 45px;
   text-align: center;
   vertical-align: middle;
+  visibility: hidden;
 }
 
 .slide p {
