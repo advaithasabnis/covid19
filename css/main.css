@@ -466,7 +466,7 @@ button.metric {
 /* Notes for sections */
 p.footnote {
 	margin-block-start: 0;
-	margin-left: 2.5%;
+	margin: 0 2.5%;
   text-align: justify;
 }
 
