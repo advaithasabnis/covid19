@@ -183,7 +183,7 @@ button:focus {
 
 .topnav-content {
 	padding: 0 10px;
-	background-color: #ededed;
+	background-color: #eee;
 	max-width: 1140px;
 	margin: 0 auto;
 }
@@ -294,7 +294,7 @@ button:focus {
 
 /* Collapsible Sections */
 .collapsible {
-	background-color: #ededed;
+	background-color: #eee;
 	transition: background .2s ease-in;
 	cursor: pointer;
 	font-size: 16px;
@@ -510,7 +510,7 @@ p.footnote {
 
 /* Footer */
 .footer-main {
-  background-color: #ededed;
+  background-color: #eee;
   margin-top: 20px;
 }
 
