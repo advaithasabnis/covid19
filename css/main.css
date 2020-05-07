@@ -338,6 +338,7 @@ button:focus {
   display: none;
 	overflow: hidden;
 	padding: 0;
+  z-index: -1;
 }
 
 .prpanel.default {
