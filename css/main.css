@@ -333,12 +333,23 @@ button:focus {
 	padding: 0;
 }
 
-.panel>.topbar {
-	margin-left: 8%;
-}
-
 .panel.default {
   max-height: 2500px;
+}
+
+.prpanel {
+	margin: 0 auto;
+  display: none;
+	overflow: hidden;
+	padding: 0;
+}
+
+.prpanel.default {
+  display: block;
+}
+
+.prpanel>.topbar {
+	margin-left: 8%;
 }
 
 /* Tooltips */
