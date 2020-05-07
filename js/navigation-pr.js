@@ -3,22 +3,14 @@ window.addEventListener('DOMContentLoaded', function () {
 	var menu = document.getElementById("myTopnav");
 	
 	menubtn.onclick = function() {
-	  if (menu.className === "topnav") {
-	    menu.className += " responsive";
-	  } else {
-		menu.className = "topnav";
-	  }
+	  menu.classList.toggle("responsive");
 	};
 	
 	var prbtn = document.getElementById("prBtn");
 	var prmenu = document.getElementById("prselector");
 	
 	prbtn.onclick = function() {
-	  if (prmenu.className === "selector-content") {
-	    prmenu.className += " responsive";
-	  } else {
-		prmenu.className = "selector-content";
-	  }
+	  prmenu.classList.toggle("responsive");
 	};
 
 	window.onclick = function(event) {
@@ -39,7 +31,7 @@ function prSelector(item) {
 	var prmenu = document.getElementById("prselector");
 	prmenu.className = "selector-content";
 	
-	var coll = document.getElementsByClassName("prpanel");
+	var coll = document.getElementsByClassName("panel");
 	var tabBtns = document.getElementsByClassName("selector-item");
 	var i;
 	

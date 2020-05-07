@@ -16,11 +16,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	var menu = document.getElementById("myTopnav");
 	
 	menubtn.onclick = function() {
-	  if (menu.className === "topnav") {
-	    menu.className += " responsive";
-	  } else {
-		menu.className = "topnav";
-	  }
+	  menu.classList.toggle("responsive");
 	};
 
 	window.onclick = function(event) {
@@ -39,17 +35,23 @@ window.addEventListener('DOMContentLoaded', function () {
 	var i;
 
 	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var panel = this.parentElement.nextElementSibling;
-		if (panel.style.maxHeight) {
-		  panel.style.maxHeight = null;
-		} else {
-		  panel.style.maxHeight = 2500 + "px";
-		}
-	  });
-	}
+	  coll[i].addEventListener("click", openClose);
+	  }
 });
+
+function openClose() {
+	this.classList.toggle("active");
+	var panel = this.parentElement.nextElementSibling;
+	if (panel.style.display === "block") {
+		panel.style.display = "none";
+	} else {
+		panel.style.display = "block";
+		graphDivs = panel.getElementsByClassName("plotly-graph-div");
+		for (i = 0; i < graphDivs.length; i++) {
+			Plotly.relayout(graphDivs[i], {autosize: true});
+		}
+	}
+}
 
 function bycases() {
   var x = document.getElementById("byCases");
