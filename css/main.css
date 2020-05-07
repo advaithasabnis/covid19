@@ -60,10 +60,6 @@ button:focus {
 	margin-top: 10px;
 }
 
-.beforeload {
-  visibility: hidden;
-}
-
 .container {
 	margin: 0 auto;
 	max-width: 1140px;
