@@ -31,7 +31,7 @@ function prSelector(item) {
 	var prmenu = document.getElementById("prselector");
 	prmenu.className = "selector-content";
 	
-	var coll = document.getElementsByClassName("panel");
+	var coll = document.getElementsByClassName("prpanel");
 	var tabBtns = document.getElementsByClassName("selector-item");
 	var i;
 	

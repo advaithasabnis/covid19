@@ -324,16 +324,24 @@ button:focus {
 
 .panel {
 	margin: 0 auto;
+	max-height: 0;
+	overflow: hidden;
+	padding: 0;
+  transition: max-height 0.2s;
+}
+
+.prpanel {
+	margin: 0 auto;
 	display: none;
 	overflow: hidden;
 	padding: 0;
 }
 
-.panel.default {
+.prpanel.default {
   display: block;
 }
 
-.panel>.topbar {
+.pranel>.topbar {
 	margin-left: 8%;
 }
 

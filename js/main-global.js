@@ -42,14 +42,10 @@ window.addEventListener('DOMContentLoaded', function () {
 function openClose() {
 	this.classList.toggle("active");
 	var panel = this.parentElement.nextElementSibling;
-	if (panel.style.display === "block") {
-		panel.style.display = "none";
+	if (panel.style.maxHeight) {
+		panel.style.maxHeight = null;
 	} else {
-		panel.style.display = "block";
-		graphDivs = panel.getElementsByClassName("plotly-graph-div");
-		for (i = 0; i < graphDivs.length; i++) {
-			Plotly.relayout(graphDivs[i], {autosize: true});
-		}
+		panel.style.maxHeight = 2500 + "px";
 	}
 }
 
