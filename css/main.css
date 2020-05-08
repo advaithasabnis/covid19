@@ -475,6 +475,10 @@ p.footnote {
   text-align: justify;
 }
 
+p.footnote.info {
+  color: #007bff;
+}
+
 #readmoreText {
   display: none;
 }
