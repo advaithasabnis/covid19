@@ -7,3 +7,7 @@
 	padding-bottom: 0;
 	height: 513px;
 }
+
+.info-note-mobile {
+  display: none;
+}

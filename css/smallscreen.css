@@ -94,3 +94,11 @@
 .copyright {
 	margin-left: 0;
 }
+
+.info-note-desktop {
+  display: none;
+}
+
+.info-note-mobile {
+  display: block;
+}

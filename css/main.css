@@ -469,14 +469,19 @@ button.metric {
 }
 
 /* Notes for sections */
-p.footnote {
+.footnote {
 	margin-block-start: 0;
 	margin: 0 2.5%;
   text-align: justify;
 }
 
-p.footnote.info {
+.info-note, .info-note-mobile, .info-note-desktop {
   color: #007bff;
+  text-align: center;
+}
+
+.info-note-mobile {
+  display: none;
 }
 
 #readmoreText {
