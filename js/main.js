@@ -53,6 +53,17 @@ window.addEventListener('DOMContentLoaded', function () {
 	for (i = 0; i < coll.length; i++) {
 	  coll[i].addEventListener("click", openClose);
 	  }
+	
+	var primeGraph = document.getElementById("canadaPrime").children[0].children[0];
+	
+	primeGraph.on('plotly_hover', function(eventdata) {
+    if (eventdata.xvals) {
+        Plotly.Fx.hover(primeGraph, {
+            xval: eventdata.xvals[0]
+        }, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5']);
+    }
+	});
+		
 });
 
 function openClose() {
