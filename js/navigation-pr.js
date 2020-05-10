@@ -1,4 +1,7 @@
 window.addEventListener('DOMContentLoaded', function () {
+	activePr = document.getElementById("active-pr");
+	prSelector(activePr);
+	
 	var menubtn = document.getElementById("menuBtn");
 	var menu = document.getElementById("myTopnav");
 	
@@ -26,8 +29,6 @@ window.addEventListener('DOMContentLoaded', function () {
 	  prmenu.className = "selector-content";
 	};
 	
-	activePr = document.getElementById("active-pr");
-	prSelector(activePr);
 });
 
 function prSelector(item) {
