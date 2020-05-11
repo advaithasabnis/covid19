@@ -57,25 +57,27 @@ function prSelector(item) {
 		Plotly.relayout(graphDivs[i], {autosize: true});
 	}
 	
-	var primeGraph = graphDivs[2];
-	
-	primeGraph.on('plotly_hover', function(eventdata) {
-    if (eventdata.xvals) {
-			Plotly.Fx.hover(primeGraph, {
-					xval: eventdata.xvals[0]
-			}, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5', 'x6y6']);
-		}
-	});
-	
-	primeGraph.on('plotly_click', function(eventdata) {
-    if (eventdata.points[0]) {
-			var clickDate = new Date(...prepareDate(eventdata.points[0].x));
-			var clickTime = clickDate.getTime();
-			Plotly.Fx.hover(primeGraph, {
-					xval: clickTime
-			}, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5', 'x6y6']);
-    }
-	});
+	if (pr != "all") {
+		var primeGraph = graphDivs[2];
+		
+		primeGraph.on('plotly_hover', function(eventdata) {
+			if (eventdata.xvals) {
+				Plotly.Fx.hover(primeGraph, {
+						xval: eventdata.xvals[0]
+				}, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5', 'x6y6']);
+			}
+		});
+		
+		primeGraph.on('plotly_click', function(eventdata) {
+			if (eventdata.points[0]) {
+				var clickDate = new Date(...prepareDate(eventdata.points[0].x));
+				var clickTime = clickDate.getTime();
+				Plotly.Fx.hover(primeGraph, {
+						xval: clickTime
+				}, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5', 'x6y6']);
+			}
+		});
+	}
 }
 
 function prepareDate(da) {
