@@ -1,21 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
 
-	var slideIndex = 0;
-	carousel();
-
-	function carousel() {
-		var j;
-		var s = document.getElementsByClassName("slide");
-		for (j = 0; j < s.length; j++) {
-			s[j].style.display = "none";
-			s[j].style.visibility = "visible";
-		}
-		slideIndex++;
-		if (slideIndex > s.length) {slideIndex=1;}
-		s[slideIndex-1].style.display = "table-cell";
-		setTimeout(carousel, 6000);
-	}
-	
 	var modal = document.getElementById("myModal");
 	var infobtn = document.getElementById("myBtn");
 	var span = document.getElementsByClassName("close")[0];
