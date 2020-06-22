@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://covid-19incanada.com/" target="_blank">
-    <img src="src/horizontal-logo.png" alt="Logo" height="50">
+    <img src="src/logo-horizontal.png" alt="Logo" height="50">
   </a>
   <br />
   <a href="https://covid-19incanada.com/" target="_blank"><strong>Visit the website »</strong></a>
@@ -13,6 +13,8 @@
 
 ## About
 An informative website with clear and interactive charts presenting the current COVID-19 situation in Canada. The website focuses on what "flattening the curve" looks like for Canada and on how our social distancing efforts and lockdown seem to be working. The website includes data on active and recovered cases, mortality, testing, and hospitalization for each province. Also available are doubling time for cases and deaths for provinces in Canada and select countries around the world.
+
+The motivation to develop this website was the lack of good dashboards during March 2020. We talked about flattening the curve but no one was quantifying it. I wanted to know: "Are we flattening the curve?" and so this website was born.
 
 <!-- DATA -->
 ## Data Sources
