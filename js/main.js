@@ -57,24 +57,6 @@ window.addEventListener('DOMContentLoaded', function () {
 			}, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5', 'x6y6']);
     }
 	});
-	
-	/*primeGraph.on('plotly_click', function(eventdata) {
-			var pointNum = eventdata.points[0].pointNumber;
-			Plotly.Fx.hover(primeGraph, [
-				{curveNumber:0, pointNumber:pointNum},
-				{curveNumber:1, pointNumber:pointNum},
-				{curveNumber:2, pointNumber:pointNum},
-				{curveNumber:3, pointNumber:pointNum},
-				{curveNumber:4, pointNumber:pointNum},
-				{curveNumber:5, pointNumber:pointNum},
-				{curveNumber:6, pointNumber:pointNum},
-				{curveNumber:7, pointNumber:pointNum},
-				{curveNumber:8, pointNumber:pointNum},
-				{curveNumber:9, pointNumber:pointNum},
-			], ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5']
-			);
-			alert(pointNum);
-	});*/
 		
 });
 
