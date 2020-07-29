@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
 	activePr = document.getElementById("active-pr");
-	prSelector(activePr);
+	defaultPrSelector(activePr);
 	
 	var menubtn = document.getElementById("menuBtn");
 	var menu = document.getElementById("myTopnav");
@@ -30,6 +30,38 @@ window.addEventListener('DOMContentLoaded', function () {
 	};
 	
 });
+
+function defaultPrSelector(item) {
+	var pr = item.value;
+	panel = document.getElementById(pr);
+	
+	graphDivs = panel.getElementsByClassName("plotly-graph-div");
+	for (i = 0; i < graphDivs.length; i++) {
+		Plotly.relayout(graphDivs[i], {autosize: true});
+	}
+	
+	if (pr != "all") {
+		var primeGraph = graphDivs[2];
+		
+		primeGraph.on('plotly_hover', function(eventdata) {
+			if (eventdata.xvals) {
+				Plotly.Fx.hover(primeGraph, {
+						xval: eventdata.xvals[0]
+				}, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5', 'x6y6']);
+			}
+		});
+		
+		primeGraph.on('plotly_click', function(eventdata) {
+			if (eventdata.points[0]) {
+				var clickDate = new Date(...prepareDate(eventdata.points[0].x));
+				var clickTime = clickDate.getTime();
+				Plotly.Fx.hover(primeGraph, {
+						xval: clickTime
+				}, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5', 'x6y6']);
+			}
+		});
+	}
+}
 
 function prSelector(item) {
 	var prmenu = document.getElementById("prselector");

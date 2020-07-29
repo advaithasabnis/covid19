@@ -57,7 +57,7 @@ button:focus {
 }
 
 .main2 {
-	margin-top: 55px;
+	margin-top: 10px;
 }
 
 .container {
@@ -77,7 +77,7 @@ button:focus {
 }
 
 .gap-container {
-  margin: 70px auto;
+  margin: 40px auto;
 }
 
 .col-left {
@@ -266,8 +266,8 @@ button:focus {
   border: 0;
   border-radius: 4px;
   font-size: 15px;
-  margin: 5px 5px;
-  padding: 7px 22px;
+  margin: 5px 3px 15px 3px;
+  padding: 7px 12px;
   transition: background .2s ease-in;
 }
 

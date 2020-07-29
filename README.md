@@ -12,18 +12,13 @@
 
 
 ## About
-An informative website with clear and interactive charts presenting the current COVID-19 situation in Canada. The website focuses on what "flattening the curve" looks like for Canada and on how our social distancing efforts and lockdown seem to be working. The website includes data on active and recovered cases, mortality, testing, and hospitalization for each province. Also available are doubling time for cases and deaths for provinces in Canada and select countries around the world.
+An informative website with clear and interactive charts presenting the current COVID-19 situation in Canada. The website focuses on what "flattening the curve" looks like for Canada and on how our social distancing efforts and lockdown seem to be working. The website includes data on active and recovered cases, mortality, and testing for each province. Also available are doubling time for cases and deaths for provinces in Canada and select countries around the world.
 
 The motivation to develop this website was the lack of good dashboards during March 2020. We talked about flattening the curve but no one was quantifying it. I wanted to know: "Are we flattening the curve?" and so this website was born.
 
 <!-- DATA -->
 ## Data Sources
-<b>National Authorities:</b>
-* <a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html" target="_blank">Public Health Agency of Canada</a>
-* <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901" target="_blank">Population Estimates, Statistics Canada</a>
-
-
-<b>Provincial Authorities:</b>
+<b>Canadian Data:</b>
 * <a href="http://www.bccdc.ca/health-info/diseases-conditions/covid-19/data" target="_blank">British Columbia</a>
 * <a href="https://covid19stats.alberta.ca/" target="_blank">Alberta</a>
 * <a href="https://dashboard.saskatchewan.ca/health-wellness" target="_blank">Saskatchewan</a>
@@ -37,6 +32,9 @@ The motivation to develop this website was the lack of good dashboards during Ma
 * <a href="https://yukon.ca/en/case-counts-covid-19" target="_blank">Yukon</a>
 * <a href="https://www.gov.nt.ca/covid-19/" target="_blank">Northwest Territories</a>
 * <a href="https://www.gov.nu.ca/health/information/covid-19-novel-coronavirus" target="_blank">Nunavut</a>
+* Case data after July 17 from: <a href="https://www.cmaj.ca/content/192/15/E420" target="_blank">COVID-19 Canada Open Data Working Group</a> (Berry I, Soucy J-PR, Tuite A, Fisman D. Open access epidemiologic data and an interactive dashboard to monitor the COVID-19 outbreak in Canada. CMAJ. 2020 Apr 14, 192(15), E420)
+* Hospitalization data from Noah Little: <a href="https://covid19tracker.ca/" target="_blank">COVID-19 Canada Tracker</a>
+* Provincial population estimates from <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901" target="_blank">Statistics Canada</a>
 
 
 <b>Global Data:</b>
