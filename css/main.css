@@ -508,6 +508,7 @@ button.metric {
 .answer {
 	font-size: 1em;
 	color: #fa8072;
+  text-align: justify;
 }
 
 .answer a, .answer ul, .answer p {
