@@ -32,8 +32,9 @@ The motivation to develop this website was the lack of good dashboards during Ma
 * <a href="https://yukon.ca/en/case-counts-covid-19" target="_blank">Yukon</a>
 * <a href="https://www.gov.nt.ca/covid-19/" target="_blank">Northwest Territories</a>
 * <a href="https://www.gov.nu.ca/health/information/covid-19-novel-coronavirus" target="_blank">Nunavut</a>
-* Case data after July 17 from: <a href="https://www.cmaj.ca/content/192/15/E420" target="_blank">COVID-19 Canada Open Data Working Group</a> (Berry I, Soucy J-PR, Tuite A, Fisman D. Open access epidemiologic data and an interactive dashboard to monitor the COVID-19 outbreak in Canada. CMAJ. 2020 Apr 14, 192(15), E420)
-* Hospitalization data from Noah Little: <a href="https://covid19tracker.ca/" target="_blank">COVID-19 Canada Tracker</a>
+* Case data after July 17: <a href="https://www.cmaj.ca/content/192/15/E420" target="_blank">COVID-19 Canada Open Data Working Group</a> (CMAJ. 2020 Apr 14, 192(15), E420)
+* Recovery numbers for Ontario: <a href="https://coronavirus.1point3acres.com/en" target="_blank">1Point3Acres.com</a>
+* Hospitalization data: <a href="https://covid19tracker.ca/" target="_blank">COVID-19 Canada Tracker</a>
 * Provincial population estimates from <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901" target="_blank">Statistics Canada</a>
 
 
