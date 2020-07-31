@@ -1,4 +1,4 @@
-# COMMENT: Redirect home
+# COMMENT: Home redirect
 # COMMENT: Use index.html for all pages on domain
 
 [[redirects]]
