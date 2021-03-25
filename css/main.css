@@ -34,6 +34,10 @@ body {
    font-family: archia;
 }
 
+pre {
+  font-family: monospace;
+}
+
 h1, h2, h3, h4, h5, p, a {
 	color: #4f4f4f;
 	margin: 0.5em 0;
@@ -54,10 +58,6 @@ button:focus {
 /* Main Containers */
 .main {
 	margin-top: 55px;
-}
-
-.main2 {
-	margin-top: 10px;
 }
 
 .container {
@@ -289,7 +289,7 @@ button:focus {
 }
 
 /* Collapsible Sections */
-.collapsible {
+/*.collapsible {
 	background-color: #eee;
 	transition: background .2s ease-in;
 	cursor: pointer;
@@ -328,7 +328,7 @@ button:focus {
 	overflow: hidden;
 	padding: 0;
   transition: max-height 0.2s;
-}
+}*/
 
 .prpanel {
 	margin: 0 auto;
@@ -476,7 +476,6 @@ button.metric {
 }
 
 .info-note, .info-note-mobile, .info-note-desktop {
-  color: #007bff;
   text-align: center;
 }
 

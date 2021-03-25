@@ -1,20 +1,20 @@
 window.addEventListener('DOMContentLoaded', function () {
 
-	var slideIndex = 0;
-	carousel();
+	// var slideIndex = 0;
+	// carousel();
 
-	function carousel() {
-		var j;
-		var s = document.getElementsByClassName("slide");
-		for (j = 0; j < s.length; j++) {
-			s[j].style.display = "none";
-			s[j].style.visibility = "visible";
-		}
-		slideIndex++;
-		if (slideIndex > s.length) {slideIndex=1;}
-		s[slideIndex-1].style.display = "table-cell";
-		setTimeout(carousel, 6000);
-	}
+	// function carousel() {
+	// 	var j;
+	// 	var s = document.getElementsByClassName("slide");
+	// 	for (j = 0; j < s.length; j++) {
+	// 		s[j].style.display = "none";
+	// 		s[j].style.visibility = "visible";
+	// 	}
+	// 	slideIndex++;
+	// 	if (slideIndex > s.length) {slideIndex=1;}
+	// 	s[slideIndex-1].style.display = "table-cell";
+	// 	setTimeout(carousel, 6000);
+	// }
 
 	var modal = document.getElementById("myModal");
 	var infobtn = document.getElementById("myBtn");
@@ -47,12 +47,12 @@ window.addEventListener('DOMContentLoaded', function () {
 	  menu.className = "topnav";
 	};
 	
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
+	// var coll = document.getElementsByClassName("collapsible");
+	// var i;
 
-	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", openClose);
-	  }
+	// for (i = 0; i < coll.length; i++) {
+	//   coll[i].addEventListener("click", openClose);
+	//   }
 	
 	var primeGraph = document.getElementById("canadaPrime").children[0].children[0];
 	
@@ -81,15 +81,15 @@ function prepareDate(da) {
   return [y, m - 1, d]; //Return as an array with y,m,d sequence
 }
 
-function openClose() {
-	this.classList.toggle("active");
-	var panel = this.parentElement.nextElementSibling;
-	if (panel.style.maxHeight) {
-		panel.style.maxHeight = null;
-	} else {
-		panel.style.maxHeight = 2500 + "px";
-	}
-}
+// function openClose() {
+// 	this.classList.toggle("active");
+// 	var panel = this.parentElement.nextElementSibling;
+// 	if (panel.style.maxHeight) {
+// 		panel.style.maxHeight = null;
+// 	} else {
+// 		panel.style.maxHeight = 2500 + "px";
+// 	}
+// }
 
 function bycases() {
   var x = document.getElementById("byCases");
