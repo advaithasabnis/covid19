@@ -54,25 +54,35 @@ window.addEventListener('DOMContentLoaded', function () {
 	//   coll[i].addEventListener("click", openClose);
 	//   }
 	
-	var primeGraph = document.getElementById("canadaPrime").children[0].children[0];
+	// var primeGraph = document.getElementById("canadaPrime").children[0].children[0];
 	
-	primeGraph.on('plotly_hover', function(eventdata) {
-    if (eventdata.xvals) {
-			Plotly.Fx.hover(primeGraph, {
-					xval: eventdata.xvals[0]
-			}, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5', 'x6y6']);
-		}
-	});
+	// primeGraph.on('plotly_hover', function(eventdata) {
+	//     if (eventdata.xvals) {
+	// 		Plotly.Fx.hover(primeGraph, {
+	// 				xval: eventdata.xvals[0]
+	// 		}, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5', 'x6y6']);
+	// 	}
+	// });
 	
-	primeGraph.on('plotly_click', function(eventdata) {
-    if (eventdata.points[0]) {
-			var clickDate = new Date(...prepareDate(eventdata.points[0].x));
-			var clickTime = clickDate.getTime();
-			Plotly.Fx.hover(primeGraph, {
-					xval: clickTime
-			}, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5', 'x6y6']);
-    }
-	});
+	// primeGraph.on('plotly_click', function(eventdata) {
+	//     if (eventdata.points[0]) {
+	// 		var clickDate = new Date(...prepareDate(eventdata.points[0].x));
+	// 		var clickTime = clickDate.getTime();
+	// 		Plotly.Fx.hover(primeGraph, {
+	// 				xval: clickTime
+	// 		}, ['xy', 'x2y2', 'x3y3', 'x4y4', 'x5y5', 'x6y6']);
+	//     }
+	// });
+
+	// primeGraph.on('plotly_relayout', function(eventdata) {
+	// 	console.log(eventdata);
+	// 	if (eventdata['xaxis.range[0]']) {
+	// 		var update = {
+	// 			'yaxis.range[0]': 5000
+	// 		}
+	// 		Plotly.relayout(primeGraph, update)
+	// 	}
+	// });
 		
 });
 
